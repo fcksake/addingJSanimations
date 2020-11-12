@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=DM Mono");
+
+html,body {
+  font-family: 'DM Mono', sans-serif;
+  padding: 3em 2em;
+  font-size: 18px;
+  background: #222;
+  color: #aaa
+}
+
+h1,h2 {
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+h1 { font-size: 3.5em; }
+h2 {
+  color: #888;
+  font-size: 2em;
+}

@@ -1,0 +1,186 @@
+/* place your custom code here */
+
+.square {
+    position: fixed;
+    width: 4.9%;
+    background-color: red;
+    z-index: 0;
+    top: 0;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.content {
+    position: absolute;
+    width: 82%;
+    background-color: red;
+    padding-left: 15%;
+    padding-top: 8%;
+}
+
+/**/
+
+#photos {
+    margin-top: 4.9%;
+    width: 100%;
+    position: relative;
+    max-height: 98%;
+    z-index: 2;
+
+}
+
+
+#photos a {
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    z-index: 84;
+    max-height: 60%;
+}
+
+#photos img {
+    position: static;
+    float: right;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-height: 100%;
+    z-index: 16;
+    z-index: 16;
+    /* background: #cbf1f7;*/
+    background: linear-gradient(to bottom left, #f4fdff, #cbf1f7);
+}
+
+
+#photos sidebar {
+    position: absolute;
+    left: 0;
+    writing-mode: vertical-rl;
+    background: black;
+    color: white;
+    width: 20.4%;
+    float: left;
+    height: 51%;
+    /* padding: 6px 8px 6px 16px; */
+    top: 0px;
+    z-index: 22;
+    font-size: .80vw;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 180%;
+    letter-spacing: 1px;
+    font-family: helvetica, sans-serif;
+    /*"Trebuchet MS",helvetica, sans-serif;*/
+    text-shadow: none;
+}
+
+#photos sidebarwhite {
+    position: absolute;
+    left: 0;
+    writing-mode: horizontal-tb;
+    background: white;
+    color: black;
+    width: 20.4%;
+    float: left;
+    height: 100%;
+    top: 36%;
+    z-index: 20;
+    font-size: .80vw;
+    text-align: center;
+    text-transform: full-width;
+    vertical-align: middle;
+    padding: 20% 0;
+    line-height: 220%;
+}
+
+#photos p3 {
+    padding-top: 20.6%;
+    padding-left: 46%;
+    right: 31%;
+    position: absolute;
+    font-family: 'Barlow';
+    z-index: 21;
+    line-height: 1.4em;
+    font-size: 2.36vw;
+    text-align: right;
+    text-shadow: 1px 1px white;
+}
+
+#photos p {
+    @import url("https://fonts.googleapis.com/css?family=DM Mono");
+
+    padding: 12.3% 0 14% 24%;
+    position: absolute;
+    max-width: 76%;
+    font-family: 'DM Mono';
+
+    /*font-family: 'Barlow';?/
+
+    /* font-family: 'Righteous', helvetica, sans-serif;
+    font-family: "Trebuchet MS", helvetica, sans-serif;*/
+    z-index: 24;
+    line-height: 1.4em;
+    font-size: 2.36vw;
+    text-align: left;
+    text-shadow: 1px 1px white;
+}
+
+
+/*here is where we start the codepen bullshit
+
+body {
+    font-family: 'DM Mono', sans-serif;
+    padding: 3em 2em;
+    /* font-size: 18px;
+    background: #222;
+    color: #aaa
+}
+
+p,
+p1 {
+    font-weight: 200;
+    margin: 0.4em 0;
+}
+
+p {
+    font-size: 1.4em;
+} */
+
+/*
+p1 {
+    color: #888;
+    font-size: 2em;
+}
+*/
+
+/*here is when codepen bullshit ends*/
+
+#photos p1 {
+    padding: 4% 0 6% 11.6%;
+    position: absolute;
+    max-width: 92%;
+    font-family: 'Barlow';
+    /*font-family: 'Righteous', helvetica, sans-serif;
+    /*"Trebuchet MS",helvetica, sans-serif;*/
+    color: #989898;
+    font-size: 3vw;
+    text-align: left;
+    z-index: 8;
+    text-shadow: 2px 2px white;
+}
+
+#photos p2 {
+    padding: 5% 0 6% 66%;
+    position: absolute;
+    max-width: 86%;
+    font-family: 'Barlow';
+    color: #000000;
+    font-size: 7vw;
+    text-align: left;
+    z-index: 8;
+    opacity: 0.6;
+}

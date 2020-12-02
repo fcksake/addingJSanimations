@@ -1,0 +1,692 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Helvetica';
+    color: #333333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+    overflow-x: hidden;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 65px;
+        margin-bottom: 40px;
+    }
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+@media (min-width: 700px) {
+    h2 {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+@media (min-width: 700px) {
+    h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+@media (min-width: 700px) {
+    p {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+}
+
+p:last-child {
+    margin: 0;
+}
+
+.header {
+    display: block;
+}
+
+.header-align {
+    max-width: 1200px;
+    width: 100%;
+    /*  padding: 0 20px;
+    margin: 0 auto 50px;*/
+    display: table;
+    display: block;
+    /* margin: 20px auto 20px;*/
+}
+
+@media (min-width: 700px) {
+    .header-align {
+        margin: 0 auto 100px;
+    }
+}
+
+.header-align:after {
+    content: '';
+    display: table;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .header-align {
+        margin: 60px auto 20px;
+    }
+}
+
+.header img {
+    float: left;
+    width: 50px;
+    /*here width*/
+}
+
+@media (min-width: 700px) {
+    .header img {
+        width: 120px;
+    }
+}
+
+.header button {
+    float: right;
+    margin-top: 35px;
+}
+
+@media (min-width: 700px) {
+    .header button {
+        display: none;
+    }
+}
+
+.header .nav {
+    display: none;
+    list-style: none;
+    clear: both;
+    padding-top: 2px;
+    /*here*/
+}
+
+.header .nav.active {
+    display: block;
+}
+
+@media (min-width: 700px) {
+    .header .nav {
+        display: inline-block;
+        float: right;
+        clear: none;
+    }
+}
+
+.header .nav li {
+    display: block;
+}
+
+@media (min-width: 700px) {
+    .header .nav li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+}
+
+.header .nav li a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+@media (min-width: 700px) {
+    .header .nav li a {
+        padding: 0 5px 5px;
+    }
+
+    .header .nav li a:hover {
+        border-bottom: solid 3px #00a1e9;
+    }
+}
+
+.footer {
+    display: block;
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (min-width: 700px) {
+    .footer {
+        padding: 100px 0 60px;
+    }
+}
+
+.footer-align {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto 50px;
+    display: table;
+    margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+    .footer-align {
+        margin: 0 auto 100px;
+    }
+}
+
+.footer-align:after {
+    content: '';
+    display: table;
+    width: 100%;
+}
+
+.footer-content {
+    display: block;
+    margin: 0 0 30px;
+}
+
+@media (min-width: 700px) {
+    .footer-content {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 60px 0 0;
+        padding: 0 20px;
+    }
+}
+
+.footer strong {
+    display: block;
+    font-weight: 900;
+    line-height: 2;
+}
+
+.footer span {
+    display: block;
+    line-height: 2;
+}
+
+.footer .blue {
+    display: block;
+    position: absolute;
+    top: -80%;
+    left: 70%;
+    height: 250%;
+    z-index: -1;
+}
+
+.hero {
+    position: relative;
+    display: block;
+    margin-bottom: 70px;
+}
+
+@media (min-width: 700px) {
+    .hero {
+        margin-bottom: 220px;
+    }
+}
+
+.hero-align {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto 50px;
+    display: table;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    z-index: 2;
+}
+
+@media (min-width: 700px) {
+    .hero-align {
+        margin: 0 auto 100px;
+    }
+}
+
+.hero-align:after {
+    content: '';
+    display: table;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .hero-align {
+        margin: 0 auto 150px;
+        display: table;
+    }
+}
+
+.hero-content {
+    width: 100%;
+    position: relative;
+    order: 1;
+}
+
+@media (min-width: 700px) {
+    .hero-content {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+    }
+}
+
+.hero-content.left {
+    order: 2;
+    padding: 20px 0 0;
+}
+
+@media (min-width: 700px) {
+    .hero-content.left {
+        padding: 0 100px 0 20px;
+    }
+}
+
+.hero-content .button {
+    display: block;
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #00a1e9;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.standard {
+    position: relative;
+    display: block;
+}
+
+.standard.split {
+    margin-bottom: 70px;
+}
+
+@media (min-width: 700px) {
+    .standard.split {
+        margin-bottom: 220px;
+    }
+}
+
+.standard-align {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto 50px;
+    display: table;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media (min-width: 700px) {
+    .standard-align {
+        margin: 0 auto 100px;
+    }
+}
+
+.standard-align:after {
+    content: '';
+    display: table;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .standard-align {
+        display: table;
+    }
+}
+
+.standard-content {
+    width: 100%;
+    position: relative;
+    order: 1;
+}
+
+@media (min-width: 700px) {
+    .standard-content {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+    }
+}
+
+.standard-content img {
+    position: relative;
+}
+
+.standard-content.left,
+.standard-content.right {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.standard-content.left.show,
+.standard-content.right.show {
+    opacity: 1;
+}
+
+.standard-content.left {
+    order: 2;
+    padding: 20px 0 0;
+}
+
+@media (min-width: 700px) {
+    .standard-content.left {
+        padding: 0 100px 0 20px;
+    }
+}
+
+.standard-content.right {
+    order: 2;
+    padding: 20px 0 0;
+}
+
+@media (min-width: 700px) {
+    .standard-content.right {
+        padding: 0 20px 0 130px;
+    }
+}
+
+.standard-content span {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 0 10px 5px 0;
+    border-bottom: solid 3px #b40323;
+    font-size: 14px;
+}
+
+@media (min-width: 700px) {
+    .standard-content span {
+        margin-bottom: 30px;
+        font-size: 16px;
+        padding: 0 15px 5px 0;
+    }
+}
+
+.standard-content span.blue {
+    border-bottom: solid 3px #00a1e9;
+}
+
+.gallery {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 700px) {
+    .gallery {
+        margin-bottom: 220px;
+    }
+}
+
+.gallery-align {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto 50px;
+    display: table;
+}
+
+@media (min-width: 700px) {
+    .gallery-align {
+        margin: 0 auto 100px;
+    }
+}
+
+.gallery-align:after {
+    content: '';
+    display: table;
+    width: 100%;
+}
+
+.gallery h2 {
+    text-align: center;
+}
+
+.gallery ul {
+    list-style: none;
+    text-align: center;
+}
+
+.gallery li {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 20px;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .gallery li {
+        padding: 0 15px 30px;
+        width: calc(49% - 30px);
+    }
+}
+
+.gallery li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    display: block;
+    background-color: #eeeeee;
+    padding: 50px 0;
+}
+
+@media (min-width: 700px) {
+    .contact {
+        padding: 130px 0;
+    }
+}
+
+.contact-align {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto 50px;
+    display: table;
+    margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+    .contact-align {
+        margin: 0 auto 100px;
+    }
+}
+
+.contact-align:after {
+    content: '';
+    display: table;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .contact-align {
+        margin: 0 auto;
+    }
+}
+
+.contact-content,
+.contact-form {
+    padding: 0 0 20px;
+}
+
+@media (min-width: 700px) {
+    .contact-content,
+    .contact-form {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 700px) {
+    .contact-content.left,
+    .contact-form.left {
+        padding: 0 130px 0 20px;
+    }
+}
+
+@media (min-width: 700px) {
+    .contact-content.right,
+    .contact-form.right {
+        padding: 0 20px 0 130px;
+    }
+}
+
+.contact-content .form-control,
+.contact-form .form-control {
+    display: inline-block;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .contact-content .form-control,
+    .contact-form .form-control {
+        width: 42%;
+        margin-right: 5%;
+    }
+}
+
+.contact-content .form-control label,
+.contact-form .form-control label {
+    font-weight: 900;
+}
+
+.contact-content .form-control input,
+.contact-form .form-control input {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    border-bottom: solid 1px #333333;
+    outline: none;
+}
+
+.contact-content button,
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 30px;
+    background-color: #b40323;
+    color: #ffffff;
+}
+
+@media (min-width: 700px) {
+    .contact-content button,
+    .contact-form button {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .parallax {
+        display: block;
+        position: absolute;
+        top: -100%;
+        right: 55%;
+        height: 250%;
+        z-index: -1;
+    }
+}
+
+.parallax.hero {
+    top: -50%;
+    left: 60%;
+    height: 250%;
+}
+
+.parallax.about {
+    top: -100%;
+    right: 55%;
+    height: 250%;
+}
+
+.parallax.workouts {
+    top: -100%;
+    left: 55%;
+    height: 250%;
+}
+
+.parallax.transform {
+    top: -200%;
+    left: 70%;
+    height: 450%;
+}
+
+.parallax.gallery {
+    top: -100%;
+    right: 55%;
+    height: 250%;
+}
+
+.parallax.gallery2 {
+    top: 0;
+    left: 25%;
+    height: 250%;
+}
+
+@media (min-width: 1200px) {
+    .dots {
+        display: block;
+        position: absolute;
+        top: 150px;
+        left: 100px;
+        height: 100%;
+        width: 100%;
+        background-image: url("https://imgur.com/v4Fw2KS.png");
+        z-index: -1;
+    }
+}
